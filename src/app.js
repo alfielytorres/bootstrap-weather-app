@@ -50,7 +50,7 @@ app.get('/about',(req,res)=>{
 
 //help page
 app.get('/help',(req,res)=>{
-    res.render('Help',{
+    res.render('help',{
         title:'Get Help ',
         author:'Alfie Torres',
         helpText:'for any bugs email me at alfietorresbusiness@gmail.com',
