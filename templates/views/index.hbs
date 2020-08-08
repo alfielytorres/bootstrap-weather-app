@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛈️</text></svg>">
+    <title>The Forecast</title>
+</head>
+<body>
+    {{>header}}
+    <main>
+        {{>title}}
+        <br>
+
+        <form id="location-form">
+            <div class="input-group mb-3">
+                <input value="" class="form-control" placeholder="Enter country's name to find the weather...">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-outline-secondary">Search</button>
+                </div>
+            </div>
+        </form>
+
+
+        <div id="output">
+
+        </div>
+    </main>
+    {{>footer}}
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+    <script src="/dist/js/bootstrap.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
